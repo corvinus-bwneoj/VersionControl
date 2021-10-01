@@ -27,6 +27,7 @@ namespace UserMaintenance2
             listBox1.ValueMember = "ID";
             listBox1.DisplayMember = "FullName";
             button2.Text = Resource1.Write;
+            button3.Text = Resource1.Delete;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -39,30 +40,7 @@ namespace UserMaintenance2
             users.Add(u);
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -80,6 +58,15 @@ namespace UserMaintenance2
                 }
             }
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var torles = listBox1.SelectedItem;
+            if (torles!=null)
+            {
+                users.Remove((User)torles);
+            }
         }
     }
 }
