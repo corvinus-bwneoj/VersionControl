@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserMaintenance2", "UserMaintenance2\UserMaintenance2.csproj", "{F3C3FB3D-590E-406D-B207-FB1900F9A542}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel", "Excel\Excel.csproj", "{83BA0EEF-DFAE-4D51-B66E-E61548E0D87A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Letrehozas", "Letrehozas\Letrehozas.csproj", "{83BA0EEF-DFAE-4D51-B66E-E61548E0D87A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

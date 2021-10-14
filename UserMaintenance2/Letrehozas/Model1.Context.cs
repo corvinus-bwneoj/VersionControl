@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Excel
+namespace ExcelLetrehozas
 {
     using System;
     using System.Data.Entity;

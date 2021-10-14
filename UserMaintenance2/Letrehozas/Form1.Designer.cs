@@ -1,5 +1,5 @@
 ﻿
-namespace Excel
+namespace ExcelLetrehozas
 {
     partial class Form1
     {
