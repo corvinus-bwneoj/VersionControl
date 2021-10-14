@@ -110,6 +110,24 @@ namespace ExcelLetrehozas
             xlSheet.get_Range(
              GetCell(2, 1),
              GetCell(1 + values.GetLength(0), values.GetLength(1))).Value2 = values;
+            ExcelMester.Range headerRange = xlSheet.get_Range(GetCell(1, 1), GetCell(1, headers.Length));
+            headerRange.Font.Bold = true;
+            headerRange.VerticalAlignment = ExcelMester.XlVAlign.xlVAlignCenter;
+            headerRange.HorizontalAlignment = ExcelMester.XlHAlign.xlHAlignCenter;
+            headerRange.EntireColumn.AutoFit();
+            headerRange.RowHeight = 40;
+            headerRange.Interior.Color = Color.LightBlue;
+            headerRange.BorderAround2(ExcelMester.XlLineStyle.xlContinuous, ExcelMester.XlBorderWeight.xlThick);
+
+            ExcelMester.Range tobbiRange= xlSheet.get_Range(GetCell(2, 1), GetCell(xlSheet.UsedRange.Rows.Count, headers.Length));
+            tobbiRange.BorderAround2(ExcelMester.XlLineStyle.xlContinuous, ExcelMester.XlBorderWeight.xlThick);
+            ExcelMester.Range elsooszlop = xlSheet.get_Range(GetCell(2, 1), GetCell(xlSheet.UsedRange.Rows.Count, 1));
+            elsooszlop.Font.Bold = true;
+            elsooszlop.Interior.Color = Color.LightYellow;
+            ExcelMester.Range utolsooszlop = xlSheet.get_Range(GetCell(2, headers.Length), GetCell(xlSheet.UsedRange.Rows.Count, headers.Length));
+            utolsooszlop.Interior.Color = Color.LightGreen;
+            utolsooszlop.NumberFormat = "######.00";
+
         }
         private string GetCell(int x, int y)
         {
