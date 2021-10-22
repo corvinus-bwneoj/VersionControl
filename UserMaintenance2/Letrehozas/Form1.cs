@@ -46,7 +46,7 @@ namespace ExcelLetrehozas
                 xlSheet = xlWB.ActiveSheet;
 
                 // Tábla létrehozása
-               // CreateTable(); // Ennek megírása a következő feladatrészben következik
+                CreateTable(); // Ennek megírása a következő feladatrészben következik
 
                 // Control átadása a felhasználónak
                 xlApp.Visible = true;
