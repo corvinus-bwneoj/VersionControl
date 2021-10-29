@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Letrehozas", "Letrehozas\Le
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VaR", "VaR\VaR.csproj", "{C5444D1B-1DB2-4425-914B-7FB83E50111B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week06", "Week06\Week06.csproj", "{09B9A260-DD98-4EF7-85AF-08C50B32CC42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C5444D1B-1DB2-4425-914B-7FB83E50111B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5444D1B-1DB2-4425-914B-7FB83E50111B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5444D1B-1DB2-4425-914B-7FB83E50111B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09B9A260-DD98-4EF7-85AF-08C50B32CC42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09B9A260-DD98-4EF7-85AF-08C50B32CC42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09B9A260-DD98-4EF7-85AF-08C50B32CC42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09B9A260-DD98-4EF7-85AF-08C50B32CC42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
