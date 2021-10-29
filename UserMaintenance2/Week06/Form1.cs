@@ -8,18 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Week06.ServiceReference1;
+using Week06.Entities;
 
 namespace Week06
 {
     public partial class Form1 : Form
     {
-       
+        BindingList<RateData> Rates;
         public Form1()
         {
             InitializeComponent();
 
             DRC();
-
+            dataGridView1.DataSource = Rates;
         }
         void DRC()
         {
