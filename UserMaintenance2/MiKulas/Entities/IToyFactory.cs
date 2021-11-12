@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MiKulas.Abstractions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace MiKulas.Entities
 {
-    public class BallFactory
+    public class IToyFactory: Abstractions.IToyFactory
     {
-            public Ball CreateNew()
+            public Abstractions.Toy CreateNew()
             {
-                return new Ball();
+                return new Toy();
             }
         
     }

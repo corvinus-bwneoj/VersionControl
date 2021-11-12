@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace MiKulas.Entities
 {
-    public class Ball:Toy
+    public class Toy: Abstractions.Toy
     {
      
 
