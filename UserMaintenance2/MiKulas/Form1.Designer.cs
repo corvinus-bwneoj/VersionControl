@@ -33,17 +33,19 @@ namespace MiKulas
             this.mainPanel = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNext = new System.Windows.Forms.Label();
             this.createTimer = new System.Windows.Forms.Timer(this.components);
             this.conveyorTimer = new System.Windows.Forms.Timer(this.components);
+            this.button3 = new System.Windows.Forms.Button();
             this.mainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainPanel
             // 
+            this.mainPanel.Controls.Add(this.button3);
             this.mainPanel.Controls.Add(this.button2);
             this.mainPanel.Controls.Add(this.button1);
-            this.mainPanel.Controls.Add(this.label1);
+            this.mainPanel.Controls.Add(this.lblNext);
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(803, 454);
@@ -69,14 +71,14 @@ namespace MiKulas
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
+            // lblNext
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(235, 170);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Coming next:";
+            this.lblNext.AutoSize = true;
+            this.lblNext.Location = new System.Drawing.Point(235, 170);
+            this.lblNext.Name = "lblNext";
+            this.lblNext.Size = new System.Drawing.Size(89, 17);
+            this.lblNext.TabIndex = 0;
+            this.lblNext.Text = "Coming next:";
             // 
             // createTimer
             // 
@@ -89,6 +91,16 @@ namespace MiKulas
             this.conveyorTimer.Enabled = true;
             this.conveyorTimer.Interval = 10;
             this.conveyorTimer.Tick += new System.EventHandler(this.conveyorTimer_Tick);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(238, 231);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
@@ -111,7 +123,8 @@ namespace MiKulas
         private System.Windows.Forms.Timer conveyorTimer;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNext;
+        private System.Windows.Forms.Button button3;
     }
 }
 

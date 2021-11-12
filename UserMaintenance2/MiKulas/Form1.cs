@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MiKulas.Abstractions;
 using MiKulas.Entities;
 
 namespace MiKulas
@@ -15,6 +16,8 @@ namespace MiKulas
 
     public partial class Form1 : Form
     {
+
+        private Toy _nextToy;
         private List<Toy> _toys = new List<Toy>();
         private IToyFactory _factory;
         public IToyFactory Factory
@@ -28,13 +31,13 @@ namespace MiKulas
         public Form1()
         {
             InitializeComponent();
-            Factory = new IToyFactory();
+            
         }
 
         private void createTimer_Tick(object sender, EventArgs e)
         {
             var toy = Factory.CreateNew();
-            _toys.Add((Toy)toy);
+            _toys.Add(toy);
             toy.Left = -toy.Width;
             mainPanel.Controls.Add(toy);
         }
@@ -64,7 +67,10 @@ namespace MiKulas
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Factory = new BallFactory();
+            Factory = new BallFactory
+            {
+                BallColor = btnBallColor.BackColor
+            };
 
         }
         private void DisplayNext()
@@ -75,6 +81,17 @@ namespace MiKulas
             _nextToy.Top = lblNext.Top + lblNext.Height + 20;
             _nextToy.Left = lblNext.Left;
             Controls.Add(_nextToy);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var button = (Button)sender;
+            var colorPicker = new ColorDialog();
+
+            colorPicker.Color = button.BackColor;
+            if (colorPicker.ShowDialog() != DialogResult.OK)
+                return;
+            button.BackColor = colorPicker.Color;
         }
     }
 }
